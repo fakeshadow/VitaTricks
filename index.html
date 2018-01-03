@@ -1,10 +1,4 @@
-<b>ICS Senders:</b><br>
-<a href="caldbdumper.html">Dump Calendar.db</a><br>
-<a href="pkg.html">Get Package Installer</a><br>
-<a href="signup.html">Get Sign Up App</a><br>
-<a href="uri.html">Send any URI Call you want</a><br>
-<b>InApp Browser Tools</b><br>
-<a href="url.html">Goto URL:</a><br>
+<title>VitaTricks</title>
 <b>ICS Senders:</b><br>
 <a href="caldbdumper.html">Dump Calendar.db</a><br>
 <a href="pkg.html">Get Package Installer</a><br>
@@ -13,4 +7,5 @@
 <b>InApp Browser Tools</b><br>
 <a href="url.html">Goto URL:</a><br>
 <b>Bookmarklets (tap and hold the link and select "open" then add bookmark under the 3 dots)</b><br>
-<a href="javascript:document.write('<title>View Page SRC </title><plaintext>'+document.documentElement.outerHTML);">View Page SRC</a>
+<a href="javascript:try{srcViewed}catch(err){srcViewed = true;document.write('<title>View Page SRC </title><plaintext>'+document.documentElement.outerHTML);}">View Page SRC</a><br>
+<a href="javascript:document.title='JavaScript Console';try{var command = prompt('Enter JavaScript Code:');alert(command+': '+eval(command));}catch(err){alert(err.name+': '+err.message);}">Javascript Console</a>
