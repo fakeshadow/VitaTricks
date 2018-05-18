@@ -2,25 +2,22 @@
 Enter mac address
 <input id="mac"></input>
 <br>
-
+<div id="model">Unknown model PSVITA (JS Disabled)</div>
 <script>
-isPageOnVita = false;
-erred = false;
-if(navigator.platform == "PlayStation Vita")
-{
-isPageOnVita = true;
-firmware = navigator.userAgent.substring(navigator.userAgent.indexOf("PlayStation Vita ")+17)
-firmware = firmware[0]+firmware[1]+firmware[2]+firmware[3]
-}
-else
-{
-firmware = ""
-}
-document.write('<div id="model">Unknown model PSVITA '+firmware+'</div>');
-
 function getMac()
 {
     setTimeout(getMac, 0);
+
+    if(navigator.platform == "PlayStation Vita")
+    {
+    firmware = navigator.userAgent.substring(navigator.userAgent.indexOf("PlayStation Vita ")+17)
+    firmware = firmware[0]+firmware[1]+firmware[2]+firmware[3]
+    }
+    else
+    {
+    firmware = ""
+    }
+
     macaddr = mac.value.toUpperCase();
     if(macaddr === undefined){macaddr = "";};
 
